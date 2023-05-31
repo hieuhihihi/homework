@@ -1,9 +1,113 @@
 
+
+
+.img{
+	max-width: 1000%;
+	align-items:"left";
+}
+
+.ht-center{
+	width: 60%; margin: 0 auto;
+}
+
+.fa-user {
+	width: 30px;
+	height: 30px;
+}
+.social-login{
+	color: #000;
+	width: auto;
+	height: auto;
+}
+
+.lan-selector{
+	color: #161715;
+}
+
+body > div {
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+.box {
+	height: 60px;
+	background-color: #4cb5f1;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;width: 60px;
+	font-size: 18px;
+	align-items: center;
+  }
+   
+  input {
+	background: none;
+	outline: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: 0px;
+	transition: 0.8s ease;
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+  }
+   
+  input::placeholder {
+	color: antiquewhite;
+  }
+   
+  a {
+	color: whitesmoke;
+	
+  }
+   
+  .box:hover input {
+	width: 200px;
+	margin: 0 20px;
+	border-bottom: 2px solid red;
+  }
+   
+  input:focus {
+	width: 200px;
+	margin: 0 20px;
+	border-bottom: 2px solid red;
+  }
+
+input::placeholder {
+  color: 4cb5f1;
+}
+
+
+.picture-class{
+	width: auto;
+}
+
+.header-background{
+	background-color:#a4d7f5 ;
+}
+
+
+.picture-class{
+	width: 100%	;
+	display: block;
+    height: 100%;
+	background-image:url();
+	background-size: cover;
+}
+
+.ht-left,.ht-right,.ht-all,.header-top,.inner-header{
+	background-color: #a4d7f5;
+	color: #ffffff;
+	text-align: center;
+}
+
+
 html,
 body {
 	height: 100%;
 	font-family: "Muli", sans-serif;
-	-webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -18,6 +122,10 @@ h6 {
 	font-family: "Muli", sans-serif;
 }
 
+
+img{
+	width: 60%;
+}
 h1 {
 	font-size: 70px;
 }
@@ -52,7 +160,7 @@ p {
 }
 
 img {
-	max-width: 100%;
+	max-width: 70%;
 }
 
 input:focus,
@@ -75,9 +183,6 @@ ol {
 	margin: 0;
 }
 
-/*---------------------
-  Helper CSS
------------------------*/
 
 .section-title {
 	margin-bottom: 40px;
@@ -231,14 +336,9 @@ ol {
 	}
 }
 
-/*---------------------
-  Header
------------------------*/
-
 .ht-right .lan-selector {
-	max-width: 142px;
-	cursor: pointer;
-	display: inline-block;
+	max-width: 100%;
+	display: flex;
 	position: relative;
 }
 
@@ -666,7 +766,7 @@ ol {
 .nav-item .nav-depart .depart-btn .depart-hover {
 	position: absolute;
 	width: 100%;
-	background: #fff;
+	background: #ffffff;
 	left: 0;
 	top: 62px;
 	opacity: 0;
@@ -1124,7 +1224,7 @@ ol {
 
 .product-item:hover .pi-pic .icon {
 	top: 15px;
-	opacity:4;
+	opacity: 1;
 }
 
 .product-item:hover .pi-pic ul {
@@ -1458,18 +1558,17 @@ ol {
 }
 
 .owl-carousel .owl-item img {
-	display: block;
+	display: flex;
 	width: auto;
 }
 
-/*---------------------
-  Footer
------------------------*/
+footer{
+	width: 100%;
+}
 
 .footer-section {
 	background: #191919;
 	padding-top: 75px;
-	width: 100%;
 }
 
 .footer-left {
@@ -2583,9 +2682,6 @@ ol {
 	margin-bottom: 45px;
 }
 
-/*---------------------
-  Related Products
------------------------*/
 
 .related-products {
 	padding-top: 0;
@@ -2599,10 +2695,6 @@ ol {
 .related-products .section-title h2:before {
 	display: none;
 }
-
-/*---------------------
-  Shopping Cart
------------------------*/
 
 .shopping-cart {
 	padding-top: 80px;
@@ -2638,9 +2730,10 @@ ol {
 	padding-bottom: 34px;
 }
 
-.cart-table table tr td.first-row {
+.cart-table table tr td{
 	padding-top: 30px;
 }
+
 
 .cart-table table tr td.cart-pic {
 	width: 21%;
@@ -4044,7 +4137,7 @@ ol {
 	}
 	.header-top .ht-left,
 	.header-top .top-social {
-		display: none;
+		display: flex;
 	}
 	.header-top .ht-right .login-panel {
 		padding-top: 9px;
@@ -4277,4 +4370,8 @@ ol {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+}
+
+.row{
+
 }
